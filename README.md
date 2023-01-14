@@ -1,10 +1,44 @@
-# Axd-insta-crack
-This is a tool used to crack Instagram
+# AXD-INSTA-CRACK
+Instagram Hacking Tool
 
-command
 
-*************************
+# Instagram Account Cracking Tool
+ 
+This is a tool that will help you crack Instagram account very quickly.
 
+#
+
+# Tool Requirements 
+
++ Version from Termux 2021 onwards
+
+ + Net Usage : 20 Mb
+
++ Storage 50mb Above
+
++ Stable Connection
+
+
+
+
+# Tool Features
+
++ Instagram Accounts Cracker
++ Wordlist
++ Proxy Already Added
++ Fast Cracking
++ Usernames File Maker
++ Two Factor Accounts Finder
++ Super Brute Mode
+
+
+
+
+
+### Installation On Termux
+ 
+ 
+```bash
 
 $ apt update -y && apt upgrade -y
 
@@ -28,5 +62,13 @@ $ pip install python-telegram-bot
 
 $ python axd-insta-crack.py
 
+ Tool Installation successful
 
-THIS IS ONLY FOR EDUCATIONAL PURPOSE 
+```
+
+
+
+
+
+# Warning
+WARNING: This project are for educational purposes only, I don't recommend you to use it to steal people's account!
