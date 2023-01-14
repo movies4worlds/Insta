@@ -20,6 +20,8 @@ $ https://github.com/AXD-MODS/instagram-Account-Cracker
 
 $ cd instagram-Account-Cracker
 
+$ git pull
+
 $ pip install telegram
 
 $ pip install python-telegram-bot
