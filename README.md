@@ -1,4 +1,4 @@
-# axd-insta-crack
+# Axd-insta-crack
 This is a tool used to crack Instagram
 
 command
