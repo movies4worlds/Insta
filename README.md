@@ -16,7 +16,7 @@ $ pkg install python2 -y
 
 $ pkg install figlet
 
-$ https://github.com/AXD-MODS/instagram-Account-Cracker
+$ git clone https://github.com/AXD-MODS/instagram-Account-Cracker
 
 $ cd instagram-Account-Cracker
 
