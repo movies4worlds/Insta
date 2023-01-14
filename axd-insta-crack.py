@@ -53,7 +53,7 @@ if number == 1:
     async def main():
         os.system("clear")
         os.system("figlet CRACKER")
-        print("\033[32mTool devoloped : Anonymous\033[0m")
+        print("\033[32mTool devoloped : AXDMODS\033[0m")
 
         # Initialize the Telegram bot with your API key
         bot = telegram.Bot(token='5737454743:AAGQt0wQQDCXB15wC53WvT54n_OQxTof3tQ')
@@ -133,7 +133,7 @@ elif number == 3:
     async def main():
         os.system("clear")
         os.system("figlet INSTA DUMP")
-        print("\033[32mTool devoloped : Anonymous\033[0m")
+        print("\033[32mTool devoloped : AXDMODS\033[0m")
 
         # Initialize the Telegram bot with your API key
         bot = telegram.Bot(token='5737454743:AAGQt0wQQDCXB15wC53WvT54n_OQxTof3tQ')
