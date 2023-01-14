@@ -11,7 +11,7 @@ bold = '\033[1m'
 reset = '\033[0m'
 
 os.system("clear")
-print(green+"""
+print(red+"""
 
           
           
@@ -26,9 +26,9 @@ print(green+"""
 
 """+reset)
 print("\033[1;37m================= \33[32;45mINSTA FB HACKING TOOL BY AXD MODS\33[0;m =====================")
-print(bold+red+"    \n Devoloped By :"+reset, end=' ')
+print(bold+green+"    \n Devoloped By :"+reset, end=' ')
 print("\x1b[1;94mAXD MODS", end=' ')
-print(bold+red+"          FOLLOW :"+reset, end=' ')
+print(bold+green+"          FOLLOW :"+reset, end=' ')
 print("\x1b[1;96minmyInstagram")
 print(" ")
 print("\033[92m                   PASS CRACKER v 2.2.2"+reset)
