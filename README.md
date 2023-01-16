@@ -2,7 +2,7 @@
 <p align="center">
     <a href="https://github.com/AXD-MODS">
         <img
-src="https://readme-typing-svg.herokuapp.com/?size=30&width=800&lines=Welcome,+It+Is+Me+Axdmods"
+src="https://readme-typing-svg.herokuapp.com/?size=80&width=1000&lines=Welcome,+It+Is+Me+Axdmods"
             alt="Typing SVG"
         />
     </a>
