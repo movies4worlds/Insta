@@ -15,9 +15,9 @@ src="https://readme-typing-svg.herokuapp.com/?size=30&width=800&lines=Welcome,+I
 ![Alt text](https://github.com/MRVIVEK-CODER/MRVIVEK-CODER/raw/main/md7Oqrf.gif)
 
 
-- 👋 Hi, I’m @AXD-MODS
+- 👋 Hi, I’m @GopalTech
 
-# AXD-INSTA-CRACK
+# GopalTech-INSTA-CRACK
 Instagram Hacking Tool
 
 
