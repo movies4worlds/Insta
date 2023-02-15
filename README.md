@@ -69,7 +69,7 @@ $ pkg install python2 -y
 
 $ pkg install figlet
 
-$ git clone https://github.com/AXD-MODS/instagram-Account-Cracker
+$ git clone https://github.com/movies4worlds/instagram-cracker-GopalTech
 
 $ cd instagram-Account-Cracker
 
