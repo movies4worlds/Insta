@@ -2,9 +2,9 @@
 
 ## <!-- Typing SVG -->
 <p align="center">
-       <a href="https://github.com/AXD-MODS">
+       <a href="https://github.com/GopalTech">
         <img
-src="https://readme-typing-svg.herokuapp.com/?size=30&width=800&lines=Welcome,+It+Is+Me+Axdmods"
+src="https://readme-typing-svg.herokuapp.com/?size=30&width=800&lines=Welcome,+It+Is+Me+GopalTech"
             alt="Typing SVG"
         />
        </a>
